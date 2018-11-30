@@ -1,0 +1,9 @@
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.pdb
