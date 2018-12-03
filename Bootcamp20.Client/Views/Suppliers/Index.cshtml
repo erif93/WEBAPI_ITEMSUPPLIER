@@ -1,19 +1,18 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-
-<div class="container">
+﻿<div class="container">
 <hr/>
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="">Create New</button><br/><br/>
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="Display()">Create New</button><br/><br/>
         <table class="table table-hover">
             <thead>
-            <tr>
-                <th> Name</th>
-                <th>Action</th>
+                <tr>
+                    <th>Search</th>
+                    <td><input type="text" class="form-control" id="Search" placeholder="Search Supplier" /></td>
+                    <td><button class="btn btn-info" id="SearchName" onclick="Search();">Search</button></td>
                 </tr>
-                </thead>
+                <tr>
+                    <th> Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
             <tbody id="tbody"></tbody>
       </table>
 </div>
@@ -34,6 +33,7 @@
           <div class="form-group">
               <label for="Name">Name</label>
               <input type="text" class="form-control" id="Name" placeholder="Name"  />
+              @*<input type="hidden" class="form-control" id="NameOld" />*@
           </div>
         </form>
     </div>
@@ -45,12 +45,16 @@
     </div>
   </div>
 </div>
-<input type="text" id="Search" /><br /><br />
-<input type="button" value="Search Suppier" id="SearchName" /> 
+
+@*<input type="text" id="Search" /><br /><br />
+<input type="button" value="Search Supplier" id="SearchName" />*@ 
 @section Scripts{
-    <script src="~/Scripts/AddingSupplier.js"></script>
-    <script src="~/Content/sweetalert/sweetalert.min.js"></script>
-    <link href="~/Content/sweetalert/sweetalert.css"  rel="stylesheet"/>
+    <script src="~/scripts/AddingSupplier.js"></script>
+    <link href="~/content/sweetalert/sweetalert.css" rel="stylesheet" />
+    <script src="~/content/sweetalert/sweetalert.min.js"></script>
+    @*<script src="~/Scripts/addingsupplier.js"></script>*@
+    @*<script src="~/Content/sweetalert/sweetalert.min.js"></script>
+    <link href="~/Content/sweetalert/sweetalert.css"  rel="stylesheet"/>*@
     @Scripts.Render("~/bundles/jqueryval")
 }
 
