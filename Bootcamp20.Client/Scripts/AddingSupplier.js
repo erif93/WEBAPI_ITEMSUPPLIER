@@ -1,33 +1,10 @@
-﻿
+﻿//punya eri
     LoadIndexSupplier();
-
-
-
-$("#Save").click(function () {
-
-    var supplier = new Object();
-    supplier.name = $('#Name').val();
-    $.ajax({
-        url: 'http://localhost:20662/api/Suppliers',
-        type: 'POST',
-        dataType: 'json',
-        data: supplier,
-        success: function (result) {
-        LoadIndexSupplier();
-        $('#myModal').modal('hide');
-        $('#Name').val('');
-    }
-    });
-});
-
-
-
-
 
 function LoadIndexSupplier() {
     $.ajax({
         type: "GET",
-        url: 'http://localhost:20662/api/Suppliers',
+        url: "http://localhost:20662/api/Suppliers",
         dateType: "json",
         success: function (data) {
             var html = '';
@@ -43,9 +20,7 @@ function LoadIndexSupplier() {
     });
 }
 
-
 function Edit() {
-
     var supplier = new Object();
     supplier.Id = $('#Id').val();
     supplier.Name = $('#Name').val();
@@ -62,9 +37,23 @@ function Edit() {
     });
 }
 
+function Save() {
+    var supplier = new Object();
+    supplier.name = $('#Name').val();
+    $.ajax({
+        url: "http://localhost:20662/api/Suppliers/",
+        type: 'POST',
+        datatype: 'json',
+        data: supplier,
+        success: function (result) {
+            LoadIndexSupplier();
+            $('#myModal').modal('hide');
+        }
+    });
+}
 
 function GetById(Id) {
-    alert('ini id = ' + Id);
+    alert('test id = ' + Id);
     $.ajax({
         url: 'http://localhost:20662/api/Suppliers/' + Id,
         type: 'GET',
@@ -72,16 +61,16 @@ function GetById(Id) {
         success: function (result) {
             $('#Id').val(result.Id);
             $('#Name').val(result.Name);
+            //$('#NameOld').val(data.Name);
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
         },
         error: function (response) {
-            alert('ajax jln tp error');
+            alert('Something is wrong, try again');
         }
     });
 }
-
 
 function Delete(Id) {
         swal({
@@ -94,7 +83,7 @@ function Delete(Id) {
             closeOnConfirm: false
         }, function () {
             $.ajax({
-                url: "http://localhost:20662/api/Suppliers/"+ Id,
+                url: "http://localhost:20662/api/Suppliers/" + Id,
                 type: "DELETE",
                 success: function (response) {
                     swal({
@@ -113,15 +102,35 @@ function Delete(Id) {
         });
     }
 
-function find() {
-    var uri = "http://localhost:20662/api/Suppliers/";
-    var id = $('#Search').val();  
-    $.getJSON(uri + '/' + id)  
-        .done(function(data) {  
-            $('#SearchName').text(formatItem(data));  
-        })  
-        .fail(function(jqXHR, textStatus, err) {  
-            $('#Film').text('error' + err);  
-        })  
-}  
 
+
+function Search() {
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:20662/api/Suppliers/?name="+$('#Search').val(),
+        dateType: "json",
+        success: function (data) {
+            alert('lagi');
+            var html = '';
+            var i, k;
+            for (i = 0; i < data.length; i++) {
+                html += '<tr>' +
+                        '<td>' + data[i].Name + '</td>' +
+                        '<td>' + data[i].IsDelete + '</td>' +
+                        '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
+                        '</tr>';
+            }
+            $('#tbody').html(html);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert('Terjadi Kesalahan, coba lagi!');
+        }
+    });
+}
+
+function Display() {
+    $('#Name').val('');
+    $('#Id').val('');
+    $('#Update').val('');
+    $('#Save').val('');
+}
