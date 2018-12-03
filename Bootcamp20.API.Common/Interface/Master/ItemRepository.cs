@@ -28,7 +28,13 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public List<Item> Get()
         {
-            return context.Items.Include("Suppliers").Where(x => x.IsDelete == false).ToList();
+            return context.Items.Include("Supplier").Where(x => x.IsDelete == false).ToList();
+        }
+
+
+        public List<Item> Search(string name)
+        {
+            return context.Items.Where(x => x.Name.Contains(name)).ToList();
         }
 
         public Item Get(int? id)
@@ -37,7 +43,7 @@ namespace Bootcamp20.API.Common.Interface.Master
             {
                 Console.Write("id is null");
             }
-            Item item = context.Items.Include("Suppliers").SingleOrDefault(x => x.Id == id);
+            Item item = context.Items.SingleOrDefault(x => x.Id == id);
             if (item == null)
             {
                 Console.Write("Item Not Found");
@@ -47,10 +53,9 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public bool Insert(ItemParam _itemparam)
         {
-           
-            var push = new Item(_itemparam);
-            push.Supplier = context.Suppliers.SingleOrDefault(x => x.Id ==Convert.ToInt16( _itemparam.Supplier));
-            context.Items.Add(push);
+            _itemparam.Supplier = context.Suppliers.Find(_itemparam.Supplier_Id);
+            Item item = new Item(_itemparam);
+            context.Items.Add(item);
             var result = context.SaveChanges();
             if (result > 0)
             {
@@ -61,7 +66,8 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public bool Update(ItemParam _itemparam)
         {
-            var getItem = Get(_itemparam.Id);
+            _itemparam.Supplier = context.Suppliers.Find(_itemparam.Supplier_Id);
+            Item getItem = Get(_itemparam.Id);
             getItem.Update(_itemparam);
             context.Entry(getItem).State = System.Data.Entity.EntityState.Modified;
             var result = context.SaveChanges();

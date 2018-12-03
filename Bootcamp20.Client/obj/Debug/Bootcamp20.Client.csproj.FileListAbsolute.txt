@@ -37,3 +37,43 @@ C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.Clie
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.Client\bin\Newtonsoft.Json.xml
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.dll
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.pdb
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\csc.exe
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\System.Collections.Immutable.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\System.Reflection.Metadata.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\vbc.exe
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\VBCSCompiler.exe
+E:\Bootcamp20.API\Bootcamp20.Client\bin\roslyn\VBCSCompiler.exe.config
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Bootcamp20.Client.dll.config
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Bootcamp20.Client.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Bootcamp20.Client.pdb
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Antlr3.Runtime.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Microsoft.Web.Infrastructure.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Newtonsoft.Json.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Helpers.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Mvc.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Optimization.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Razor.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.Deployment.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.Razor.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\WebGrease.dll
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Helpers.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Mvc.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Optimization.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.Razor.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.Deployment.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\System.Web.WebPages.Razor.xml
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Antlr3.Runtime.pdb
+E:\Bootcamp20.API\Bootcamp20.Client\bin\Newtonsoft.Json.xml
+E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.dll
+E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.pdb
+E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.csprojResolveAssemblyReference.cache

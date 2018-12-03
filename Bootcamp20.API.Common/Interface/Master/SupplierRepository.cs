@@ -38,6 +38,24 @@ namespace Bootcamp20.API.Common.Interface.Master
         }
 
 
+        public List<Supplier> GetSearch(SupplierParam _supplierparam)
+        {
+            if (_supplierparam.typesearch == 1)
+            {
+                return context.Suppliers.Where(x => x.Name.Contains(_supplierparam.Name)).ToList();
+            }
+            else if (_supplierparam.typesearch == 2)
+            {
+                int suppdate = Convert.ToInt16(_supplierparam.Name);
+                return context.Suppliers.Where(x => x.CreateDate.Value.Month == suppdate).ToList();
+            }
+            else
+            {
+                return context.Suppliers.ToList();
+            }
+        }
+
+
         public Supplier Get(int? id)
         {
             if (id == null)

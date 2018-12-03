@@ -13,6 +13,7 @@ namespace Bootcamp20.API.Common.Interface
         List<Supplier> Get();
         Supplier Get(int? id);
         List<Supplier> Search(string name);
+        List<Supplier> GetSearch(SupplierParam _supplierparam);
         bool Insert(SupplierParam _supplierparam);
         bool Update(SupplierParam _supplierparam);
         bool Delete(int? id);

@@ -1,4 +1,15 @@
-﻿<div class="container">
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<form>
+    <select name="typesearch" id="typesearch">
+        <option value="1" selected>Supplier Name</option>
+        <option value="2">Tanggal</option>      
+    </select>
+    <input type="text" placeholder="Cari Nama Supplier" id="cari" />
+</form>
+<div class="container">
 <hr/>
  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="Display()">Create New</button><br/><br/>
         <table class="table table-hover">
@@ -21,7 +32,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dissmiss="modal">x</button>
+            <button type="button" class="close" data-dismiss="modal">x</button>
              <h4 class="modal-title" id="myModalLabel">Supplier Form</h4>
        </div>
    <div class="modal-body">

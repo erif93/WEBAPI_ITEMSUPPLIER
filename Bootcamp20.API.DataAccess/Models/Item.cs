@@ -17,13 +17,13 @@ namespace Bootcamp20.API.DataAccess.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Stock { get; set; }
-        public Nullable<int> Price { get; set; }
-        public Nullable<System.DateTime> CreateDate { get; set; }
-        public Nullable<System.DateTime> UpdateDate { get; set; }
-        public Nullable<System.DateTime> DeleteDate { get; set; }
-        public Nullable<bool> IsDelete { get; set; }
-        public Nullable<int> Supplier_Id { get; set; }
+        public int? Stock { get; set; }
+        public int? Price { get; set; }
+        public DateTime? CreateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
+        public DateTime? DeleteDate { get; set; }
+        public bool? IsDelete { get; set; }
+        public int? Supplier_Id { get; set; }
     
         public virtual Supplier Supplier { get; set; }
 
@@ -34,6 +34,7 @@ namespace Bootcamp20.API.DataAccess.Models
             this.Name = _ItemParam.Name;
             this.Stock = _ItemParam.Stock;
             this.Price = _ItemParam.Price;
+            this.Supplier = _ItemParam.Supplier;
             this.CreateDate = DateTimeOffset.Now.LocalDateTime;
             this.IsDelete = false;
         }

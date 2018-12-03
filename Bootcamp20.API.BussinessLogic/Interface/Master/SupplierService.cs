@@ -48,5 +48,10 @@ namespace Bootcamp20.API.BussinessLogic.Interface.Master
         {
             return _isupplierrepository.Update(_supplierparam);
         }
+
+        public List<Supplier> GetSearch(SupplierParam _supplierparam)
+        {
+            return _isupplierrepository.GetSearch(_supplierparam);
+        }
     }
 }

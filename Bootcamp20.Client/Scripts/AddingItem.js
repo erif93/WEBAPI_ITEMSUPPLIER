@@ -12,6 +12,7 @@ function LoadIndexItem() {
                 html += '<td>' + val.Name + '</td>';
                 html += '<td>' + val.Price + '</td>';
                 html += '<td>' + val.Stock + '</td>';
+                html += '<td>' + val.Supplier.Name + '</td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '<td> <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
                 html += '<tr>';
@@ -21,6 +22,31 @@ function LoadIndexItem() {
     });
 }
 
+
+function Search() {
+    alert('hi');
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:20662/api/Items/?name=" + $('#Search').val(),
+        dateType: "json",
+        success: function (data) {
+            alert('lagi');
+            var html = '';
+            var i, k;
+            for (i = 0; i < data.length; i++) {
+                html += '<tr>' +
+                        '<td>' + data[i].Name + '</td>' +
+                        '<td>' + data[i].IsDelete + '</td>' +
+                        '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
+                        '</tr>';
+            }
+            $('#tbody').html(html);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert('Terjadi Kesalahan, coba lagi!');
+        }
+    });
+}
 
 
 function Delete(Id) {
@@ -86,6 +112,8 @@ function combotampil() {
 $('#Save').click(function () {
     var supplier = new Object();
     supplier.name = $('#Name').val();
+    supplier.price = $('#Price').val();
+    supplier.stock = $('#Stock').val();
     supplier.Supplier_id = $('#combosuppliers').val();
     if (supplier.name == "") {
         swal("Invalid", "Harap Mengisi Form", "warning");
@@ -106,61 +134,39 @@ $('#Save').click(function () {
 });
 
 
+function GetById(Id) {
+        alert('test id = ' + Id);
+        $.ajax({
+            url: 'http://localhost:20662/api/Items/' + Id,
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                $('#Id').val(result.Id);
+                $('#Name').val(result.Name);
+                $('#Price').val(result.Price);
+                $('#Stock').val(result.Stock);
+                $('#myModal').modal('show');
+                $('#Update').show();
+                $('#Save').hide();
+            },
+            error: function (response) {
+                alert('Something is wrong, try again');
+            }
+        });
+ }
 
-function getById(id) {
-    $.ajax({
-        url: 'http://localhost:20662/api/Items' + id,
-        type: 'get',
-        dataType: 'json',
-        success: function (item) {
-            debugger;
-            $.ajax({
-                type: 'get',
-                url: 'http://localhost:20662/api/Items',
-                dataType: 'JSON',
-                success: function (data) {
-                    var html = '';
-                    var val = '';
-                    html += '<select name="combosuppliers" id="combosuppliers" class="form-control">';
-
-                    for (i = 0; i < data.length; i++) {
-                        if (data[i].Id == item.Supplier_Id) {
-                            val = 'selected';
-                        }
-                        html += '<option ' + val + ' value="' + data[i].Id + '">' + data[i].Name + '</option>';
-                        val = '';
-                    }
-                    html += '</select>';
-                    $('#Combobox').html(html);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert('Terjadi Kesalahan, coba lagi!');
-                }
-            });
-
-            $('#Name').val(item.Name);
-            $('#NameOld').val(item.Name);
-            $('#Id').val(item.Id);
-            $('#myModal').modal('show');
-            $('#Update').show();
-            $('#Save').hide();
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert('Terjadi Kesalahan, coba lagi!');
-        }
-    });
-}
 
 
 
 function Edit() {
-    debugger;
     var item = new Object();
     item.id = $('#Id').val();
     item.name = $('#Name').val();
+    item.price = $('#Price').val();
+    item.stock = $('#Stock').val();
     item.supplier_id = $('#combosuppliers').val();
     if (item.name == "") {
-        swal("Invalid", "Harap Mengisi Form", "warning");
+        swal("Invalid", "Harap Mengisi Nama Item", "warning");
         return false;
     }
     else if (item.name == $('#NameOld').val()) {
@@ -174,9 +180,11 @@ function Edit() {
             data: item,
             dataType: 'json',
             success: function (data) {
-                tampil();
+                LoadIndexItem();
                 $('#myModal').modal('hide');
                 $('#Name').val('');
+                $('#Price').val('');
+                $('#Stock').val('');
                 $('#Id').val('');
             },
             error: function (jqXHR, textStatus, errorThrown) {

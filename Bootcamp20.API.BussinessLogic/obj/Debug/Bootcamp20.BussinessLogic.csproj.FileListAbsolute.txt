@@ -12,3 +12,17 @@ C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.exe
 C:\Users\HP\Documents\Visual Studio 2015\Projects\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.pdb
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.exe.config
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.exe
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.pdb
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.Common.exe
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.DataAccess.exe
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.dll
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.Common.pdb
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.DataAccess.pdb
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.xml
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.BussinessLogic.csprojResolveAssemblyReference.cache
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.exe
+E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.pdb

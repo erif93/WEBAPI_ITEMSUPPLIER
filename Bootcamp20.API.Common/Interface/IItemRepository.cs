@@ -12,6 +12,7 @@ namespace Bootcamp20.API.Common.Interface
     {
         List<Item> Get();
         Item Get(int? id);
+        List<Item> Search(string name);
         bool Insert(ItemParam _itemparam);
         bool Update(ItemParam _itemparam);
         bool Delete(int? id);

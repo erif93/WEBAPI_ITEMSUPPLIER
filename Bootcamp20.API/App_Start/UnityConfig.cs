@@ -21,8 +21,8 @@ namespace Bootcamp20.API
             container.RegisterType<ISupplierRepository, SupplierRepository>();
             container.RegisterType<ISupplierService, SupplierService>();
 
-            container.RegisterType<IItemRepository, IItemRepository>();
-            container.RegisterType<IItemService, IItemService>();
+            container.RegisterType<IItemRepository, ItemRepository>();
+            container.RegisterType<IItemService, ItemService>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

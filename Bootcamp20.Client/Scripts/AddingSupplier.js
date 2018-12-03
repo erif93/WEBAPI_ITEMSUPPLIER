@@ -107,7 +107,7 @@ function Delete(Id) {
 function Search() {
     $.ajax({
         type: "GET",
-        url: "http://localhost:20662/api/Suppliers/?name="+$('#Search').val(),
+        url: "http://localhost:20662/api/Suppliers/?typesearch=" + $('#typesearch').val() + "&&name=" + $('#cari').val(),
         dateType: "json",
         success: function (data) {
             alert('lagi');
@@ -116,7 +116,7 @@ function Search() {
             for (i = 0; i < data.length; i++) {
                 html += '<tr>' +
                         '<td>' + data[i].Name + '</td>' +
-                        '<td>' + data[i].IsDelete + '</td>' +
+                        '<td>joss</td>' +
                         '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
                         '</tr>';
             }

@@ -21,16 +21,32 @@ namespace Bootcamp20.API.Controllers
             this._isupplierservice = isupplierservice;
         }
         // GET: api/Suppliers
+        [HttpGet]
         public IEnumerable<Supplier> Get()
         {
             return _isupplierservice.Get();
             //var a = context.Suppliers.Where(x => x.IsDelete == false).ToList();
             //return a;
         }
-
+        [HttpGet]
         public IEnumerable<Supplier> Search(string name)
         {
             return _isupplierservice.Search(name);
+        }
+
+        public IEnumerable<SupplierParam> GetSearch(int typesearch, string name)
+        {
+            SupplierParam cari = new SupplierParam();
+            cari.typesearch = typesearch;
+            cari.Name = name;
+
+            IEnumerable<SupplierParam> listparam = _isupplierservice.GetSearch(cari).Select(x => new SupplierParam
+            {
+                Id=x.Id,
+                Name = x.Name.ToString()
+
+            });
+            return listparam;
         }
 
         // GET: api/Suppliers/5

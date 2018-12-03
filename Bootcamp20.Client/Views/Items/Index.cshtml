@@ -5,15 +5,30 @@
 
 <h2>Item</h2>
 
+<form>
+    <select name="cari" id="cari">
+        <option value="1" selected>Item</option>
+        <option value="2">Supplier</option>
+        <option value="3">Tanggal</option>
+    </select>
+    <input type="text" placeholder="Cari Nama Item" id="cari" />
+</form>
+
 <div class="container">
     <hr />
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="combotampil()">Create New</button><br /><br />
     <table class="table table-hover">
         <thead>
             <tr>
+                <th>Search</th>
+                <td><input type="text" class="form-control" id="Search" placeholder="Search Item" /></td>
+                <td><button class="btn btn-info" id="SearchName" onclick="Search();">Search</button></td>
+            </tr>
+            <tr>
                 <th> Name</th>
                 <th>Price</th>
                 <th>Stock</th>
+                <th>Supplier</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -59,8 +74,6 @@
         </div>
     </div>
 </div>
-<input type="text" id="Search" /><br /><br />
-<input type="button" value="Search Item" id="SearchName" />
 @section Scripts{
     <script src="~/Scripts/AddingItem.js"></script>
     <script src="~/Content/sweetalert/sweetalert.min.js"></script>
