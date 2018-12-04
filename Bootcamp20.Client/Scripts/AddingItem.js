@@ -36,8 +36,7 @@ function LoadIndexItem() {
                 html += '<td>' + val.Stock + '</td>';
                 html += '<td>' + val.Supplier_Id + '</td>';
                 html += '<td>' + val.CreateDate + '</td>';
-                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
-                html += '<td> <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
+                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a> | <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a>';
                 html += '<tr>';
             });
             $('#tbody').html(html);
@@ -47,13 +46,12 @@ function LoadIndexItem() {
 
 
 function Search() {
-    alert('hi');
     $.ajax({
         type: "GET",
         url: "http://localhost:20662/api/Items/?typesearchitem=" + $('#typesearchitem').val() + "&&name=" + $('#cari').val(),
         dateType: "json",
         success: function (data) {
-            alert('lagi');
+            alert('check');
             var html = '';
             var i, k;
             for (i = 0; i < data.length; i++) {
@@ -63,8 +61,7 @@ function Search() {
                         '<td>' + data[i].Stock + '</td>' +
                         '<td>' + data[i].Supplier_Name + '</td>' +
                         '<td>' + data[i].CreateDate + '</td>' +
-                        '<td>' + data[i].IsDelete + '</td>' +
-                        '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
+                        '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' 
                         '</tr>';
             }
             $('#tbody').html(html);

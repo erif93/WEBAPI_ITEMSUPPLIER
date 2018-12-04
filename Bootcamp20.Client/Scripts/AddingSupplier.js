@@ -1,9 +1,15 @@
-﻿ LoadIndexSupplier();
+﻿$(document).ready(function () {
+    $('#datasupplier').DataTable({
+        "ajax":LoadIndexSupplier()
+    });
+});
+LoadIndexSupplier();
 
 function LoadIndexSupplier() {
     $.ajax({
         type: "GET",
         url: "http://localhost:20662/api/Suppliers",
+        async: false,
         dateType: "json",
         success: function (data) {
             var html = '';
@@ -11,8 +17,7 @@ function LoadIndexSupplier() {
                 html += '<tr>';
                 html += '<td>' + val.Name + '</td>';
                 html += '<td>' + val.CreateDate + '</td>';
-                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
-                html += '<td> <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
+                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a> | <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a>' ;
                 html += '<tr>';
             });
             $('#tbody').html(html);
