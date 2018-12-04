@@ -15,12 +15,7 @@ namespace Bootcamp20.DataAccess.Param
         public DateTime UpdateDate { get; set; }
         public DateTime DeleteDate { get; set; }
         public bool IsDelete { get; set; }
-
-        public int typesearch { get; set; }
-
-     
-
-
+        public int typesearch { get; set; } 
         public SupplierParam() { }
     }
 

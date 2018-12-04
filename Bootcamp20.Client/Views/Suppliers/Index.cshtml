@@ -2,25 +2,40 @@
     ViewBag.Title = "Index";
 }
 
-<form>
+@*<form>
     <select name="typesearch" id="typesearch">
         <option value="1" selected>Supplier Name</option>
-        <option value="2">Tanggal(Bulan)</option>      
+        <option value="2">Bulan(Angka)</option>      
     </select>
     <input type="text" placeholder="Cari Nama Supplier" id="cari" />
-</form>
+</form>*@
 <div class="container">
 <hr/>
  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="Display()">Create New</button><br/><br/>
         <table class="table table-hover">
             <thead>
-                <tr>
+                @*<tr>
                     <th>Search</th>
                     <td><input type="text" class="form-control" id="Search" placeholder="Search Supplier" /></td>
                     <td><button class="btn btn-info" id="SearchName" onclick="Search();">Search</button></td>
+                </tr>*@
+                <tr>
+                    <td>
+                        <select name="typesearch" id="typesearch" class="form-control">
+                            <option value="1" selected>Supplier Name</option>
+                            <option value="2">Bulan (Angka)</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="cari" placeholder="Search" />
+                    </td>
+                    <td>
+                        <button class="btn btn-info" id="SearchName" onclick="Search();">Search</button>
+                    </td>
                 </tr>
                 <tr>
-                    <th> Name</th>
+                    <th>Name</th>
+                    <th>Create Date</th>
                     <th>Action</th>
                 </tr>
             </thead>

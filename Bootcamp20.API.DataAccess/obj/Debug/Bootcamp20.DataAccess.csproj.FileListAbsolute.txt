@@ -25,6 +25,5 @@ I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\bin\Debug\Entity
 I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
 I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.xml
 I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.DataAccess.csprojResolveAssemblyReference.cache
 I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.exe
 I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.pdb

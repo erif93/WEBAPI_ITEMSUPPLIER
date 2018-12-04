@@ -35,6 +35,7 @@ function LoadIndexItem() {
                 html += '<td>' + val.Price + '</td>';
                 html += '<td>' + val.Stock + '</td>';
                 html += '<td>' + val.Supplier_Id + '</td>';
+                html += '<td>' + val.CreateDate + '</td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '<td> <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
                 html += '<tr>';
@@ -62,6 +63,7 @@ function Search() {
                         '<td>' + data[i].Stock + '</td>' +
                         '<td>' + data[i].Supplier_Name + '</td>' +
                         '<td>' + data[i].CreateDate + '</td>' +
+                        '<td>' + data[i].IsDelete + '</td>' +
                         '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
                         '</tr>';
             }

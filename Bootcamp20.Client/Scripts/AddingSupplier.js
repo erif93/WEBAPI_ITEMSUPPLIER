@@ -1,5 +1,4 @@
-﻿//punya eri
-    LoadIndexSupplier();
+﻿ LoadIndexSupplier();
 
 function LoadIndexSupplier() {
     $.ajax({
@@ -11,6 +10,7 @@ function LoadIndexSupplier() {
             $.each(data, function (index, val) {
                 html += '<tr>';
                 html += '<td>' + val.Name + '</td>';
+                html += '<td>' + val.CreateDate + '</td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '<td> <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
                 html += '<tr>';

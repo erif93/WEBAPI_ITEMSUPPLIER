@@ -23,9 +23,7 @@ namespace Bootcamp20.API.Common.Interface.Master
                 status = true;
             }
             return status;
-
         }
-
 
         public List<Supplier> Get()
         {
@@ -54,8 +52,6 @@ namespace Bootcamp20.API.Common.Interface.Master
                 return context.Suppliers.ToList();
             }
         }
-
-
         public Supplier Get(int? id)
         {
             if (id == null)

@@ -43,7 +43,8 @@ namespace Bootcamp20.API.Controllers
             IEnumerable<SupplierParam> listparam = _isupplierservice.GetSearch(cari).Select(x => new SupplierParam
             {
                 Id=x.Id,
-                Name = x.Name.ToString()
+                Name = x.Name.ToString(),
+                //CreateDate = Convert.ToDateTime(x.CreateDate)
 
             });
             return listparam;

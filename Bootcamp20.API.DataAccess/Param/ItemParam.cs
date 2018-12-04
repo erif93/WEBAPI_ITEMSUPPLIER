@@ -17,7 +17,6 @@ namespace Bootcamp20.API.DataAccess.Param
         public int typesearchitem { get; set; }
         public string Supplier_Name { get; set; }
         public Supplier Supplier { get; set; }
-        public int typesearchitem { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public DateTime DeleteDate { get; set; }
