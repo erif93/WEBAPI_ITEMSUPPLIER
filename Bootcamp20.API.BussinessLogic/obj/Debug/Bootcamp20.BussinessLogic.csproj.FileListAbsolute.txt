@@ -26,3 +26,17 @@ E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlSer
 E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.BussinessLogic.csprojResolveAssemblyReference.cache
 E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.exe
 E:\Bootcamp20.API\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.BussinessLogic.csprojResolveAssemblyReference.cache
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.exe.config
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.BussinessLogic.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.Common.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.DataAccess.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.Common.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\Bootcamp20.API.DataAccess.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.BussinessLogic\obj\Debug\Bootcamp20.API.BussinessLogic.pdb

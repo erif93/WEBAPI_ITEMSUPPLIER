@@ -77,3 +77,43 @@ E:\Bootcamp20.API\Bootcamp20.Client\bin\Newtonsoft.Json.xml
 E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.dll
 E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.pdb
 E:\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.csprojResolveAssemblyReference.cache
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\csc.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\System.Collections.Immutable.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\System.Reflection.Metadata.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\vbc.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\VBCSCompiler.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\roslyn\VBCSCompiler.exe.config
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Bootcamp20.Client.dll.config
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Bootcamp20.Client.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Bootcamp20.Client.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Antlr3.Runtime.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Microsoft.Web.Infrastructure.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Newtonsoft.Json.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Helpers.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Mvc.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Optimization.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Razor.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.Deployment.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.Razor.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\WebGrease.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Helpers.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Mvc.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Optimization.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.Razor.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.Deployment.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\System.Web.WebPages.Razor.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Antlr3.Runtime.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\bin\Newtonsoft.Json.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.csprojResolveAssemblyReference.cache

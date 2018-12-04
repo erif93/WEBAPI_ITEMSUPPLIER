@@ -28,9 +28,9 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public List<Item> Get()
         {
-            return context.Items.Include("Supplier").Where(x => x.IsDelete == false).ToList();
+            var c = context.Items.Include("Supplier").Where(x => x.IsDelete == false).ToList();
+            return c;
         }
-
 
         public List<Item> Search(string name)
         {
@@ -54,8 +54,8 @@ namespace Bootcamp20.API.Common.Interface.Master
         public bool Insert(ItemParam _itemparam)
         {
             _itemparam.Supplier = context.Suppliers.Find(_itemparam.Supplier_Id);
-            Item item = new Item(_itemparam);
-            context.Items.Add(item);
+            var push = new Item(_itemparam);
+            context.Items.Add(push);
             var result = context.SaveChanges();
             if (result > 0)
             {
@@ -66,8 +66,8 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public bool Update(ItemParam _itemparam)
         {
-            _itemparam.Supplier = context.Suppliers.Find(_itemparam.Supplier_Id);
-            Item getItem = Get(_itemparam.Id);
+            //_itemparam.Supplier = context.Suppliers.Find(_itemparam.Supplier_Id);
+            var getItem = Get(_itemparam.Id);
             getItem.Update(_itemparam);
             context.Entry(getItem).State = System.Data.Entity.EntityState.Modified;
             var result = context.SaveChanges();
@@ -76,6 +76,24 @@ namespace Bootcamp20.API.Common.Interface.Master
                 status = true;
             }
             return status;
+        }
+
+        public List<Item> GetName(ItemParam _itemparam)
+        {
+            if (_itemparam.typesearchitem == 1)
+            {
+                return context.Items.Include("Supplier").Where(x => x.Name.Contains(_itemparam.Name)).ToList();
+            }
+            else if (_itemparam.typesearchitem == 2)
+            {
+                var hasil = context.Items.Include("Supplier").Where(x => x.Supplier.Name.Contains(_itemparam.Name)).ToList();
+                return hasil;
+            }
+            //else if (_itemparam.typesearchitem == 3)
+            //{
+            //    int date = context.Items.Include("Supplier").Where(x => x.Supplier.CreateDate.Contains(_itemparam.Name)).ToList();
+            //    return date;
+            //}
         }
     }
  }

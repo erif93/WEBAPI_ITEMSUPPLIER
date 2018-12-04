@@ -44,7 +44,8 @@ namespace Bootcamp20.API.DataAccess.Models
             this.Name = _ItemParam.Name;
             this.Price = _ItemParam.Price;
             this.Stock = _ItemParam.Stock;
-            this.Supplier_Id = Convert.ToInt16(_ItemParam.Supplier);
+            //this.Supplier_Id = Convert.ToInt16(_ItemParam.Supplier);
+            this.Supplier = _ItemParam.Supplier;
             this.UpdateDate = DateTimeOffset.Now.LocalDateTime;
         }
         public virtual void Delete()

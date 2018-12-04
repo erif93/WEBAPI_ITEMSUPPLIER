@@ -16,3 +16,12 @@ E:\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.xml
 E:\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.xml
 E:\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.exe
 E:\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.exe.config
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\Bootcamp20.API.Core.pdb
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\EntityFramework.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\EntityFramework.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.exe
+I:\Update SupItem\WEBAPI_ITEMSUPPLIER\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.pdb
