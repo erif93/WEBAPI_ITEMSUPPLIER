@@ -49,7 +49,7 @@ function Search() {
     alert('hi');
     $.ajax({
         type: "GET",
-        url: "http://localhost:20662/api/Items/?name=" + $('#Search').val(),
+        url: "http://localhost:20662/api/Items/?typesearchitem=" + $('#typesearchitem').val() + "&&name=" + $('#cari').val(),
         dateType: "json",
         success: function (data) {
             alert('lagi');
@@ -58,7 +58,10 @@ function Search() {
             for (i = 0; i < data.length; i++) {
                 html += '<tr>' +
                         '<td>' + data[i].Name + '</td>' +
-                        '<td>' + data[i].IsDelete + '</td>' +
+                        '<td>' + data[i].Price + '</td>' +
+                        '<td>' + data[i].Stock + '</td>' +
+                        '<td>' + data[i].Supplier_Name + '</td>' +
+                        '<td>' + data[i].CreateDate + '</td>' +
                         '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
                         '</tr>';
             }

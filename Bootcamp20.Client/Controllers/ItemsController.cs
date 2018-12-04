@@ -13,10 +13,13 @@ namespace Bootcamp20.Client.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
 
         public ActionResult Create()
         {
             return View();
         }
+=======
+>>>>>>> b82349580ae1a3d8e5897f31e6e880e54acf0e96
     }
 }

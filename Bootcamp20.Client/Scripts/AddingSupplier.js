@@ -116,7 +116,7 @@ function Search() {
             for (i = 0; i < data.length; i++) {
                 html += '<tr>' +
                         '<td>' + data[i].Name + '</td>' +
-                        '<td>joss</td>' +
+                        '<td>' + data[i].CreateDate + '</td>' +
                         '<td><a onclick="return getById(' + data[i].Id + ')">Edit</a> | <a onclick="return deleting(' + data[i].Id + ')">Delete</a></td>' +
                         '</tr>';
             }
